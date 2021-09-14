@@ -37,6 +37,7 @@ code {
 .title {
   font-size: 4.4rem;
   text-align: center;
+  margin-top: 0;
 }
 
 /* SearchMovies */
@@ -85,5 +86,39 @@ code {
   .input {
     margin-bottom: 0;
     flex-grow: 1;
+  }
+}
+
+/* Card */
+
+.card-list {
+  margin-top: 4rem;
+  display: grid;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 50ch;
+  padding: 2rem 4rem;
+  text-align: center;
+}
+
+.card__title {
+  margin-bottom: 0.5rem;
+  font-size: 3.2rem;
+}
+
+.card__img {
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width: 950px) {
+  .card-list {
+    grid-template-columns: 1fr 1fr;
   }
 }
